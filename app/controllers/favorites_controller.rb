@@ -9,6 +9,7 @@ class FavoritesController < ApplicationController
     @favorite = Favorite.new
     @favorite.restaurant = @restaurant
     @favorite.user = current_user
+
     if @favorite.save
       # redirect_to restaurants_path
       respond_to do |format|
