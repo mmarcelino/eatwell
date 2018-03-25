@@ -6,18 +6,22 @@
 
 .nav-dashboard {
   background-color: $green;
+  transition: all 0.3s ease;
   height: 155px;
   width: 100%;
 }
 
+.nav-flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .logo-dashboard {
-  margin: 15px 10px;
+  margin: 15px 0px;
 }
 
 .edit-profile-dashboard {
-  position: absolute;
-  top: 25px;
-  right: 20px;
+  margin: 23px 0;
 }
 
 .edit-profile-dashboard a {
