@@ -2,15 +2,19 @@
 
 <div class="wrapper-dashboard">
   <div class="nav-dashboard">
-    <div class>
-      <%= link_to root_path do  %>
-        <% image_tag "logo.png", height: 40, class: "logo-dashboard" %>
-        <% end %>
-      </div>
-    <div class="edit-profile-dashboard">
-      <%= link_to edit_user_registration_path do %>
-        <p>Edit profile</p>
-      <% end %>
+    <div class="container">
+      <ul class="list-inline nav-flex-container">
+        <li>
+          <%= link_to root_path do  %>
+            <% image_tag "logo.png", height: 40, class: "logo-dashboard" %>
+            <% end %>
+          </li>
+        <li class="edit-profile-dashboard">
+          <%= link_to edit_user_registration_path do %>
+            <p>Edit profile</p>
+          <% end %>
+        </li>
+      </ul>
     </div>
   </div>
   <div class="center-avatar-dashboard">
